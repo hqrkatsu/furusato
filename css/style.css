@@ -117,7 +117,7 @@ header .header-nav2 .keyword::after{
 
 
 .slider img{
-    width: 100%;
+    width: 50vw;
     background-color: #ccc;
 }
 
@@ -267,20 +267,22 @@ header .header-nav2 .keyword::after{
 }
 
 .right .choice li{
-    padding: 5px 0;
     font-size: 12px;
     border-bottom: 1px solid #cfcfcf;
-    display: flex;
-    justify-content: space-between;
+    
 }
 
 .right .choice li:first-child{
     border-top: 1px solid #cfcfcf;
 }
-.right .choice li::after{
+.right .choice li a::after{
     content: ">";
     display: inline-block;
-
+}
+.right .choice li a{
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .right .news{
@@ -288,9 +290,12 @@ header .header-nav2 .keyword::after{
 }
 
 .right .news li{
-    padding: 10px 0;
     font-size: 12px;
     border-bottom: 1px solid #cfcfcf;
+}
+.right .news li a{
+    display: block;
+    padding: 10px 0;
 }
 
 .right .news li:first-child{
@@ -320,13 +325,15 @@ header .header-nav2 .keyword::after{
 }
 
 .right .guide li{
-    padding: 10px;
     border-bottom: 1px solid #cfcfcf;
 }
-
-
 .right .guide li:last-child{
     border-bottom: none;
+}
+
+.right .guide li a{
+    display: block;
+    padding: 10px;
 }
 
 .right .guide li p{
@@ -336,6 +343,7 @@ header .header-nav2 .keyword::after{
 
 .right .guide li p::before{
     content: '●';
+    margin-right: 2px;
 }
 
 .right .sns{
@@ -344,7 +352,6 @@ header .header-nav2 .keyword::after{
 }
 
 .right .sns li{
-    padding: 10px;
     border-bottom: 1px solid #cfcfcf;
     line-height: 1.1rem;
     font-size: 12px;
@@ -354,6 +361,7 @@ header .header-nav2 .keyword::after{
 }
 .right .sns li a{
     display: flex;
+    padding: 10px;
 }
 .right .sns li a img{
     width: 30px;
@@ -420,11 +428,13 @@ header .header-nav2 .keyword::after{
 }
 
 .historySlider{
-    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
 
 .historySlider li{
     margin-right: 20px;
+    max-width: 190px;
 }
 
 .historySlider img{
@@ -472,6 +482,11 @@ footer p{
         flex-direction: column;
     }
 
+
+    .slider img{
+        width: 100vw;
+    }
+
     .about{
         margin-top: 80px;
     }
@@ -484,6 +499,11 @@ footer p{
 
     .about__box{
         margin-top: 40px;
+    }
+
+    .history{
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -561,13 +581,15 @@ header .header-nav2{
     }
 
     .history{
-        margin-top: 80px;
+        max-width: 90%;
+        margin: 80px auto 0; 
     }
-    .historySlider{
-        width: 100%;
-        height: 300px;
+    .historySlider li{
+        max-width: 138.23px;
+        padding-bottom: 10px;
+        margin-right: 4vw;
+        margin-bottom: 30px;
     }
-
 
     footer ul{
 

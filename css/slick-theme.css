@@ -77,7 +77,8 @@
 
 .slick-prev
 {
-    left: -50px;
+    left: -15px;
+    z-index: 100;
 }
 [dir='rtl'] .slick-prev
 {
@@ -95,7 +96,8 @@
 
 .slick-next
 {
-    right: -50px;
+    right: -15px;
+    z-index: 100;
 }
 [dir='rtl'] .slick-next
 {
@@ -199,4 +201,9 @@
 {
     opacity: .75;
     color: black;
+}
+
+
+.slick-track{
+    width: 100%;
 }
